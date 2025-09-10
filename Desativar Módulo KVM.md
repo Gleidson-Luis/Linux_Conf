@@ -12,8 +12,7 @@ Para desabilitar o KVM num sistema Debian, pode desinstalar os pacotes qemu-kvm 
 
 Opção 1: Remover os pacotes (Recomendado se já não precisar do KVM) Esta opção remove completamente o KVM e as suas dependências do sistema.
 
-    Abra o terminal e digite o seguinte comando para remover os pacotes:
-    bash
+Abra o terminal e digite o seguinte comando para remover os pacotes:
 
     sudo apt remove --purge qemu-kvm libvirt-daemon-system
 
