@@ -72,3 +72,14 @@ Se tudo estiver certo, você verá as listas de pacotes sendo baixadas de:
 debian.c3sl.ufpr.br
 
 security.debian.org
+
+Alternativa (Recomendado): Usar o espelho oficial do Debian ou um CDN
+
+Em vez de usar um espelho específico que pode ter problemas, é melhor usar o serviço CDN (Content Delivery Network) do Debian, que automaticamente seleciona o mirror mais próximo e funcional para você. 
+Você pode substituir o endereço problemático (ou todas as suas entradas do Debian, se desejar) pelo endereço oficial nos seus arquivos sources.list:
+```
+deb http://deb.debian.org/debian trixie main contrib non-free-firmware
+deb http://deb.debian.org/debian trixie-updates main contrib non-free-firmware
+deb http://security.debian.org/debian-security trixie-security main contrib non-free-firmware
+``` 
+Após fazer essa alteração, execute sudo apt update novamente. 
