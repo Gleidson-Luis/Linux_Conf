@@ -22,7 +22,7 @@ sudo update-grub2
 4. Altere o tema padrão
 Para definir um tema, use o comando plymouth-set-default-theme. Para listar os temas disponíveis, execute: 
 ```
-plymouth-set-default-theme -l
+sudo plymouth-set-default-theme -l
 ```
 
 Para definir um tema, por exemplo, o tema "glow", você faria: 
