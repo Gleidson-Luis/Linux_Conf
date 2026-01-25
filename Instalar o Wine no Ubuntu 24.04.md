@@ -3,7 +3,7 @@
 ### 1. Atualizar o sistema e instalar pré-requisitos
 ```
 sudo apt update && sudo apt upgrade -y
-sudo apt install -y wget gnupg2 ca-certificates so`tware-properties-common apt-transport-https
+sudo apt install -y wget gnupg2 ca-certificates software-properties-common apt-transport-https
 ```
 
 ### 2. Habilitar arquitetura de 32 bits (necessário para muitos programas Windows)
