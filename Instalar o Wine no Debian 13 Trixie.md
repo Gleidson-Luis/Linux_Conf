@@ -17,3 +17,12 @@ Verifique novamente com
 ```
 dpkg --print-foreign-architectures
 ```
+### 2. Baixe e adicione a chave do repositório WineHQ
+```
+sudo mkdir -pm755 /etc/apt/keyrings
+wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo gpg --dearmor -o /etc/apt/keyrings/winehq-archive.key -
+```
+### 3. Adicione o repositório WineHQ
+```
+sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/dists/trixie/winehq-trixie.sources
+```
