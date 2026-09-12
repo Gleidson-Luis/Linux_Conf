@@ -30,11 +30,15 @@ sudo wget -NP /etc/apt/sources.list.d/ https://dl.winehq.org/wine-builds/debian/
 ```
 sudo apt update
 ```
-### 5. Verifique a instalação
+### 5. Instale o Wine
+```
+sudo apt install --install-recommends winehq-stable
+```
+### 6. Verifique a instalação
 ```
 wine --version
 ```
-### 6. Configurar o Wine
+### 7. Configurar o Wine
 Para abrir o painel de configuração do Wine, abra uma janela do Terminal e execute winecfg.
 
 Se/Quando a instalação do mono for oferecida, aceite a oferta, a menos que tenha certeza de que nunca precisará dela. Consulte este Apêndice para obter informações sobre Wine Mono.
